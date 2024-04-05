@@ -1,0 +1,22 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-weight: 300;
+    font-style: normal;
+}
+
+h5 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 700;
+    font-style: normal;
+}
+.bg-nav {
+    background-color: #2e98a6;
+}

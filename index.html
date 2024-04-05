@@ -12,6 +12,140 @@
     <title>Viajes Chile</title>
 </head>
 <body>
+    <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark text-white">
+        <div class="container">
+            <div>
+                <img src="assets/img/viajes.svg" height="30px" alt="logo">
+                <p class="d-inline-block">Viajes Chile</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <nav class="navbar-nav ms-auto ">
+                    <a class="nav-link active p-3" aria-current="page" href="#Inicio">Inicio</a>
+                    <a class="nav-link p-3 d-none d-md-block" href="#Who">Quienes Somos</a>
+                    <a class="nav-link p-3" href="#Destacadas">Destacadas</a>
+                    <a class="nav-link p-3" href="#Contacto">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section id="Inicio">
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-indicators  mb-auto">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                        class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="bg-dark" type="button" data-bs-target="#carousel"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="bg-dark" type="button" data-bs-target="#carousel"
+                        data-bs-slide-to="2" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-12">
+                            <img src="assets/img/carousel1.jpg" class="img-fluid" alt="Montaña">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <img src="assets/img/carousel2.jpg" class="img-fluid" alt="Moai">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12">
+                            <img src="assets/img/carousel3.jpg" class="img-fluid" alt="Pinguino">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
+    <main class="bg-black text-white">
+        <!-- QUIENES SOMOS-->
+        <section id="who" class="container d-none d-md-block">
+            <div class="text-center py-5">
+                <h3 class="roboto-bold">QUIÉNES SOMOS</h3>
+                <hr class="mt-5 mb-3" />
+            </div>
+
+            <section class="row">
+                <article class="col-12 col-md-4 py-4">
+                    <div class="text-center bg-info py-2">
+                        <i class="fa-solid fa-plane fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="text-justify">Poner lorem</p>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-4 py-4">
+
+                    <div>
+                        <p class="text-justify">Poner lorem</p>
+                    </div>
+                    <div class="text-center bg-info py-2">
+                        <i class="fa-solid fa-mountain-sun fa-2x"></i>
+                    </div>
+                </article>
+                <article class="col-12 col-md-4 py-4">
+                    <div class="text-center bg-info py-2">
+                        <i class="fa-solid fa-route fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="text-justify">Poner lorem</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- CUADRO IMAGENES -->
+        <section class="py-5 text-center container">     
+        </section>
+
+        <!-- FORMULARIO CONTACTO-->
+        <form id="contacto" class="container pb-5">
+            <div class="text-center">
+                <h3 class="roboto-bold">CONTACTO</h3>
+                <hr class="mt-4 mb-3" />
+            </div>
+            <div class="mb-3">
+                <label for="nombre-form" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre-form" aria-describedby="Nombre">
+
+            </div>
+            <div class="mb-3">
+                <label for="asunto-form" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto-form" aria-describedby="Asunto">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="text-form" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="text-form" rows="6"></textarea>
+            </div>
+            <button id="enviarMensaje" type="submit" class="btn btn-info" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                data-bs-title="Presiona para enviar a tu Mensaje">Enviar</button>
+        </form>
+    </main>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
